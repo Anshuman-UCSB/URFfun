@@ -35,9 +35,11 @@ champion decrypt(string inp){
 }
 
 void printChampion(champion inp){
+	cout<<"----------------------------"<<endl;
 	cout<<"  Champion: "<<inp.name<<endl;
 	cout<<"  Build   : "<<inp.build<<endl;
 	cout<<"  Val     : "<<to_string(inp.val)<<endl;
+	cout<<"----------------------------"<<endl;
 }
 
 int main(){
@@ -48,7 +50,7 @@ int main(){
 	
 	cout<<endl<<endl;
 
-	printChampion(decrypt("thresh:ad:50.0"));
+	printChampion(decrypt("thresh;ad;50.0"));
 
 	return 0;
 }
