@@ -44,13 +44,7 @@ void printChampion(champion inp){
 
 int main(){
 	champion thresh = {"thresh","ad",50.};
-	cout<<"starting: "<<endl;
-	cout<<thresh.val<<endl;
-	cout<<encrypt(thresh)<<endl;
-	
-	cout<<endl<<endl;
-
-	printChampion(decrypt("thresh;ad;50.0"));
+	printChampion(thresh);
 
 	return 0;
 }
